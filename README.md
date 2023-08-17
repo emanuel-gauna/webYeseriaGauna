@@ -11,9 +11,9 @@
 Yeseria Gauna es una web dedicada a mostrar, informar y compartir  todo tipo de contenido de yeseria profesional, información contactos y noticias ademas ofrece un  E-commerce con articulos y elementos de Yeseria para brindar un completo disfrute de la página y tenga todo lo relacionado al alcanze de un click, 
 
 Lo que brindamos en nuestra página, es una buena experiencia de navegación, que al momento de buscar lo que necesita no solo sea fácil, sino que también pueda despejar sus dudas sobre lo que busca.
-Asesorarse sobre algún trabajo, nuestros proyectos, la distincion y el trayecto de este hermoso oficio que data desde  hace mucho tiempo
+Asesorarse sobre algún trabajo, nuestros proyectos, la distinción y el trayecto de este hermoso oficio que data desde  hace mucho tiempo
 
-El publico al que apunta nuestra página, es a aquellas personas que quieran renovar su casa, remodelar, mejorar su departamento con yeso y molduras! ya que unas de nuestras caracteristicas es ofrecer nuestro servicio de yeseria. para casas nuevas y antiguas, refacciones en general, edificios y countrys. Así tambien podes enseñar y dar la opciones a quien quiera y se anime a ingresar a este oficio ofreciendo combos u ofertas en herramientas y materiales, presupuestos.
+El publico al que apunta nuestra página, es a aquellas personas que quieran renovar su casa, remodelar, mejorar su departamento con yeso y molduras! ya que unas de nuestras caracteristicas es ofrecer nuestro servicio de yeseria. refacciones en general de casas , edificios y countrys. Así tambien poder enseñar y dar la opciones a quien quiera y se anime a ingresar a este oficio ofreciendo combos u ofertas en herramientas y materiales, presupuestos.
 en nuestra seccion de compra se podran acceder 
 a:
 
@@ -25,7 +25,7 @@ a:
 - Ferrocarril mediano.
 
 Ademas nuestra pagina, tiene un link de  "Contactanos"
-con redes sociales de contacto(facebook - Whatsapp)para que el usuario califique su experiencia, si no tambien pueda despejar sus dudas o preguntas sobre algun articulo.
+con redes sociales de contacto(facebook - Whatsapp)para que el usuario califique su experiencia, y tambien pueda despejar sus dudas o preguntas sobre algun articulo trabajo y/o generalidad.
 
 ***
 
