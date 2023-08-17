@@ -1,0 +1,40 @@
+(botones-link)(yeseria tuyango) Ubuntu - 400
+Family
+Ubuntu, sans-serif;
+normal
+Weight
+400
+Size
+18px
+Color
+#005eb8
+
+(parrafos)(dimacosa.com.ar)"Titillium Web" - 400×
+Family
+"Titillium Web", sans-serif;
+Style
+normal
+Weight
+400
+Size
+18px
+Line Height
+18px
+Color
+#5b4353
+AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+
+(titulos)(google fonts)"Preahvihear variante0" - 400×
+Familia
+"Preahvihear variant0" , Tofu;
+Estilo
+normal
+Peso
+400
+Tamaño
+46px
+Altura de la línea
+?
+Color
+#ffffff
+AaBbCcDdEeFfGghhhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxyyZz

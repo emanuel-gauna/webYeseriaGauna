@@ -1,0 +1,213 @@
+introduccion a node.js
+
+node es un entorno de ejecucion de js del lado del servidor construido sobre el motor v8 de chrome
+
+npm init -y
+
+descargar node de
+
+crear el app.js "entrypoint"
+
+modulo es un bloque de codigo reutilizable...
+que no altera otros bloques de codigo
+
+requerir los modulos nativos de terceros o propios
+
+nativos ya vienen con el paquete de node
+
+let fs = require("fs");
+let moment = require("moment")
+
+let datos = fs.readFileSystem
+
+de terceros los instalamos con "npm install"
+
+y creados por nosotros
+a los que les tenemos q agregar el module.exports
+
+metodos de array ..............
+
+nombre = ["ema","lara", "ale"]
+
+nombre.push("yaki") //  ["ema","lara", "ale", "yaki"] //inserta elemento al final
+nombre.unshift("yaki") // ["yaki","ema","lara", "ale"] //inserta elemento al principio
+
+let ultimoNombre = nombre.pop()// ultimoNombre= "yaki" // saca el ultimo elemento y lo agrega a una variable
+let primerNombre = nombre.shift() // primerNombre= "yaki" // saca el primer elemento y lo agrega a una variable
+
+let separadosPorComas = nombre.join(); // "ema,lara,ale" // convierte el array en un string
+let separadosPorguion = nombre.join( " - ")  "ema - lara - ale" 
+
+nombre.indexOf("ale") // 2 // devuelve el indice dnd se encuentra la coincidencia
+nombre.indexOf("pepe") // -1 // nsi no encuentra la considencia devuelve -1
+
+metodos de string........
+
+let arrayNombres = [ "bart"," lisa","moe"];
+
+arrayNombres[2].length // corresponde a moe // devuelve 3
+
+let saludo = "!hola estamos programando";
+
+saludo.indexOf("estamos") // devuelve 7 // dnd comienza el string de ser encontrado
+saludo.indexOf("cheto") // devuelve -1 // no lo encontro
+saludo.indexOf("a") // devuelve 4 // corta la ejecucion cuando encuentra la primer coinsidencia
+
+saludo.slice(1,4) // devuelve "hola"
+saludo.slice(6) // devuelve "estamos programando"
+saludo.slice(-10)// 
+
+saludo.replace("hola", "chau") // "!chau estamos programando"
+..............
+funcion constructora
+
+function Auto(marca, modelo){
+    this.marca = marca;
+    this.modelo = modelo
+};
+
+let primerAuto = new Auto("Ford", "Falcon");
+let segundoAuto = new Auto("Fiat", "Uno");
+...........
+ejemplo de objeto con metodo
+
+let deportista = {
+	energia: 100,
+    experiencia: 10,
+    nombre: "Aimar",
+    entrenarHoras: function(horas){
+     this.energia =  this.energia - (horas * 5);
+     this.experiencia = this.experiencia + (horas*2);
+     return this.energia && this.experiencia
+    
+    }
+};
+
+console.log("==Antes de comenzar entrenamiento==");
+console.log("Deportista energia: "+deportista.energia);
+console.log("Deportista experiencia: "+deportista.experiencia);
+console.log("==ENTRENANDO==");
+deportista.entrenarHoras(5);
+console.log("==FIN ENTRENAMIENTO==");
+console.log("Deportista energia: "+deportista.energia);
+console.log("Deportista experiencia: "+deportista.experiencia);
+
+...........
+arrow functions
+
+let saludar = (nombre, apellido) => 'Hola, ' + nombre + ' ' +  apellido + '!'; 
+
+..........
+if ternario 
+
+let rodadoMountainBike = 18;
+let rodadoAurora = 24;
+
+let marcaRodadoMasGrande = rodadoAurora > rodadoMountainBike ? "Aurora" : "Mountain Bike";
+
+
+ ;
+console.log("La bicicleta con  mayor rodado es la " + marcaRodadoMasGrande);
+
+..........
+
+switch
+let dia = "jueves"
+
+ function tengoClases(dia){
+	switch(dia){
+    	case "lunes":
+            console.log("tenés clases");
+        case "miércoles":
+            console.log("tenés clases");
+        case "viernes":
+            console.log("tenés clases");
+             break;
+        case "jueves":
+            console.log("tenes clase pero mas tarde")
+		 default:
+		    console.log("no tenés clases");
+	}
+}
+.....
+ciclo for
+
+function noParesDeContarImparesHasta(numero){
+    let impar = 0; 
+    for( let i=0; i<=numero; i++){
+         if(i % 2 !== 0){
+             impar = impar+1;
+         }
+    }
+    return impar;
+  }
+  ..........
+  callback
+
+let doble = (numero) => numero * 2;
+let triple = (numero) => numero*3;
+let aplicarCallback = (numero,multiplo) => multiplo(numero);
+
+calculadora......
+
+let suma = (num1,num2) => num1 + num2;
+let resta = (num1,num2) => num1 - num2;
+let multiplicacion = (num1,num2) => num1 * num2;
+let division = (num1,num2) => num1 / num2;
+
+let calculadora = (num1,num2,operaciones) => operaciones(num1,num2);
+
+calculadora(25,4,division)
+........
+mas metodos de array
+let numeros = [2,4,6,22,18,50];
+let mayores = numeros.map( adultos => adultos > 17  ) // [22,18,50]
+
+let estudiantes = [
+    {nombre: 'John', promedio: 8.5, aprobado: true},
+    {nombre: 'Jane', promedio: 7, aprobado: true},
+    {nombre: 'June', promedio: 3, aprobado: false},
+]
+let aprobados = estudiantes.filter(notas => notas.aprobado === true);
+let desaprobados = estudiantes.filter(notas => notas.aprobado != true);
+
+
+let vueltas = [5, 8, 12, 3, 22];
+let totalVueltas = vueltas.reduce((inicio,total)=> inicio + total);
+
+let listaDeSuperMercado = [
+    'Bife de chorizo', 
+    'Coca Cola', 
+    'Bananas', 
+    'Lechuga', 
+    'Chimichurri', 
+    'Lata de tomates', 
+    'Arvejas', 
+    'Cereales', 
+    'Pechuga de pollo', 
+    'Leche'
+];
+listaDeSuperMercado.forEach((valor,indice) => console.log(valor,indice))
+........
+metodo DATE
+
+let dia = fecha.getDate();// dia 2
+let mes = fecha.getMonth(); // mes 12
+let anio = fecha.getFullYear() año 2023
+console.log("Día: "+ dia);
+console.log('Hoy es el día ' + dia + ' del mes '+ mes +' del año '+ anio);
+
+..............
+parametro rest
+generara un array con todos los elementos adicionales que le paserna la funcion
+
+function miFunction(param1, param2, ...otros){
+    return otros;
+}
+miFunction("a","b","c","d","e")//["c","d","e"]
+
+function sumar(...numeros){
+    return numeros.reduce((acum,num) => acum += num)
+}
+sumar(1,4); /// 5
+sumar(13,6,12,23,37) /// 99
