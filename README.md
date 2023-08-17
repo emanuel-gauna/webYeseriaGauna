@@ -8,11 +8,14 @@
 
 ## ¿Quienes somos?
 
-Yeseria Gauna es una web dedicada a mostrar, informar y compartir  todo tipo de contenido de yeseria profesional, informacion contactos y noticias ademas ofrece un  E-commerce con articulos y elementos de Yeseria para brindar un completo disfrute de la página y tenga todo lo relacionado al alcanze de un click, 
+Yeseria Gauna es una web dedicada a mostrar, informar y compartir  todo tipo de contenido de yeseria profesional, información contactos y noticias ademas ofrece un  E-commerce con articulos y elementos de Yeseria para brindar un completo disfrute de la página y tenga todo lo relacionado al alcanze de un click, 
 
-Lo que brindamos en nuestra pagina, es una buena experiencia de navegación para el Usuario, para que al momento de buscar lo que necesita no solo sea facil, sino que pueda despejar sus dudas sobre lo que busca y quedar satisfecho a la hora de comprar lo que necesita, asesorarse sobre nuestro trabajo, nuetros proyecto nuestra distincion y el trayecto de este hermoso oficio que data desde  hace mucho tiempo
+Lo que brindamos en nuestra página, es una buena experiencia de navegación, que al momento de buscar lo que necesita no solo sea fácil, sino que también pueda despejar sus dudas sobre lo que busca.
+Asesorarse sobre algún trabajo, nuestros proyectos, la distincion y el trayecto de este hermoso oficio que data desde  hace mucho tiempo
 
-El publico al que apunta nuestra pagina, es aquellas personas que quieran renovar su casa, remodelar, hacer su casa con yeso y molduras! ya que unas de nuestras caracteristicas es ofrecer nuestro servicio de yeseria. para casas nuevas, refacciones, edificios, countrys. Asi tambien podes enseñar y dar la opciones a quien quiera empezar a ingresar a este oficio ofreciendo combos u ofertas en herramientas y materiales, por ejemplo ejemplo: 
+El publico al que apunta nuestra página, es a aquellas personas que quieran renovar su casa, remodelar, mejorar su departamento con yeso y molduras! ya que unas de nuestras caracteristicas es ofrecer nuestro servicio de yeseria. para casas nuevas y antiguas, refacciones en general, edificios y countrys. Así tambien podes enseñar y dar la opciones a quien quiera y se anime a ingresar a este oficio ofreciendo combos u ofertas en herramientas y materiales, presupuestos.
+en nuestra seccion de compra se podran acceder 
+a:
 
 - Cuchara de yesero
 - Combo de yesero Inicial
@@ -21,8 +24,8 @@ El publico al que apunta nuestra pagina, es aquellas personas que quieran renova
 - Llana catalana
 - Ferrocarril mediano.
 
-Ademas nuestra pagina, tiene una session de  "Dejanos tus dudas"
-ademas de redes sociales de contacto(facebook - Whatsapp)para que el usuario califique su experiencia, si no tambien pueda despejar sus dudas o preguntas sobre algun articulo.
+Ademas nuestra pagina, tiene un link de  "Contactanos"
+con redes sociales de contacto(facebook - Whatsapp)para que el usuario califique su experiencia, si no tambien pueda despejar sus dudas o preguntas sobre algun articulo.
 
 ***
 
