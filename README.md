@@ -2,9 +2,9 @@
 
 - [APIS].............................
 
-- [Dashboard]//(https://github.com/TomasLopezTur/Dashboard_Pro-gamer_Grupo10)
+- [Dashboard]//(https://github.com/emanuel-gauna/webYeseriaGauna)
 
-<img alt="pro-gamer-logo" src="./design/proGamer_logo.png">
+<img alt="yeseriaGauna-logo" src="./design/yeseriaGauna-logo.png">
 
 ## ¿Quienes somos?
 
