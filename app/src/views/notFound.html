@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    div.containerNotFound{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        
+    }
+    li.inicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    li.inicio a:hover{
+        background-color: var(--crema);
+        color: black;
+        transform:  scale(1.5);
+    }
+    li.inicio a{
+
+        border: 2px solid var(--crema);
+        border-radius: 5px;
+        background-color: var(--violeta-oscuro);
+        padding: 5px;
+        text-align: center;
+        margin: 2px;
+        color: white;
+        text-decoration: none;
+        box-shadow: 5px 5px 15px black;
+        transition: all 1s ease;
+        text-transform: uppercase;
+    }
+    img.notFound{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        background-size: 100%;
+        background-position: 100%;
+        width: 100%;
+        
+    }
+    </style>
+<body style="background-color: white;">
+    <h1 style="background-color: red;">ERROR 404- NOT FOUND</h1>
+    <div class="containerNotFound">
+    <img  class="notfound" src="../../images/ERROR404.jpg" alt="imagen de ERROR">
+</div> 
+    <nav>
+        <ul>
+            <li class="inicio">
+                <a href="/"> volver a inicio</a>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+</html>
