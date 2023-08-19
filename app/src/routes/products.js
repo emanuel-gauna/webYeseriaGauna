@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
-const controller = require("../controllers/productsController.js")
+const { all , productsCart, productDetail, categories, search} = require("../controllers/productsController.js")
 
 // todos los productos
-router.get("/" , controller.all );
+router.get("/" , all );
 //detalle de producto
-router.get("/detail/:id" , controller.productDetail );
+router.get("/detail/:id" , productDetail );
 //categorias
-router.get("/category/:id" , controller.categories );
+router.get("/category/:id" , categories );
 //carrito
-router.get("/productCart" , controller.productCart );
+router.get("/productsCart" , productsCart );
 //buscador
-router.get("/search" , controller.search );
+router.get("/search" , search );
 
 module.exports = router;

@@ -3,18 +3,18 @@ const { encode } = require("querystring")
 
 module.exports = {
     all: (req,res) =>{
-        res.sendFile(path.join(__dirname, "../views/products/allProducts.html"))
+        res.render("products/allProducts")
     },
     productDetail: (req,res) =>{
-        res.sendFile(path.join(__dirname, "../views/products/productDetail.html"))
+        res.render("products/productDetail")
     },
     categories: (req,res) =>{
-        res.sendFile(path.join(__dirname, "../views/products/productsCategories.html"))
+        res.render("products/productsCategories")
     },
-    productCart: (req,res) =>{
-        res.sendFile(path.join(__dirname, "../views/products/productsCart.html"))
+    productsCart: (req,res) =>{
+        res.render("products/productsCart")
     },
     search: (req,res) =>{
-        res.sendFile(path.join(__dirname, "../views/products/search.html"))
+        res.render("products/search")
     }
 }
