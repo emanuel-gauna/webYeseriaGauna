@@ -27,3 +27,10 @@
 - nueva middelware de ruta en el entrypoint
 - envebiendo codigo js en los archivos .ejs
 - crando carpeta partials y archivos parciales para todas las vistas (head,header,footer)
+
+## viernes 25 de agosto del 2023
+
+- agregando logo a la home 
+- creacion de ruteo y vista de error 404, 
+- creando lista de materials.json.
+- creacion de codigo en header y footer.
