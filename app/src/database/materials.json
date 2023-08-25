@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "yeso tradicional tuyango",
+        "peso": "30kg",
+        "precio": "65.50",
+        "image": "Carpaccio-de-salmon.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Yeso proyectable Alpress 35kg",
+        "peso": "35 kg",
+        "precio": "47.00",
+        "image": "Risotto-berenjena-queso-cabra.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Cuchara de yesero",
+        "descripcion": "cuchara de yesero de 5 remaches",
+        "precio": "27.50",
+        "image": "Mousse-de-arroz-con-leche.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "llana catalana",
+        "descripcion": "llana de yesero tipo catalana de",
+        "medidas": "(15 < 18) x 20" ,
+        "precio": "37.50",
+        "image": "esparragos.png"
+    }
+
+]

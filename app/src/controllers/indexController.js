@@ -1,5 +1,5 @@
 const path = require("path")
-const { encode } = require("querystring")
+
 
 module.exports = {
     index: ( req, res ) =>{
