@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+    <%- include('../partials/head') %>
+    <title>registro</title>
+    
+    <body>
+        <!-- header -->
+    <%- include('../partials/header') %>
+
+    <h3>Registrate</h3>
+    <form action="post" action="/users/register" method="post" enctype="multipart/form-data">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" id="">
+        <p>Hobies</p>
+        <% for (let index = 1; index < 10; index++) { %>
+            <label for=""> hobiee <%= index %> </label>
+            <% if ( index % 2 == 0){ %>
+                <input class="par" type="text" name="hobies[]" placeholder="ingresa tu hobiee">
+                <% } else{ %>
+                    <input class="impar" type="text" name="hobies[]" placeholder="ingresa tu hobiee">
+             <% } %>
+             <br>
+        <% } %>
+    </form>
+    <% for (let i = 0;  i < listUsers.length; i++) { %>
+        <li>
+            <%= listUsers[i] %>
+        </li>    
+    <% } %>
+
+</body>
+
+</html>

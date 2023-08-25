@@ -15,6 +15,7 @@ app.set("views", "./src/views");
 const indexRouter = require("./routes/index.js")
 const productsRouter = require("./routes/products.js");
 const cartRouter = require("./routes/cart.js");
+const usersRouter = require("./routes/users.js");
 
 //rutas estaticas
 app.use(express.static("public"));
@@ -33,6 +34,8 @@ app.use("/", indexRouter);
 app.use("/products", productsRouter);
 //carrito de compras//
 app.use("/cart", cartRouter);
+//usuarios
+app.use("/users", usersRouter);
 
 
 app.listen( PORT , ()=> console.log(`escuchando al servidor ${PORT}\n http://localhost:${PORT}`))
