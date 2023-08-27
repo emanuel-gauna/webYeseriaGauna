@@ -10,7 +10,9 @@ const menu = JSON.parse(fs.readFileSync(menuFilePath, 'utf-8'));
 
 module.exports = {
     all: (req,res) =>{
-        res.render("products/allProducts")
+        res.render("products/allProducts", {
+            menu
+        })
     },
     productDetail: (req,res) =>{
         const materialId = +req.params.id;
@@ -27,6 +29,21 @@ module.exports = {
         res.render("products/productsCart")
     },
     search: (req,res) =>{
-        res.render("products/search")
+      
+        let busqueda = req.query.keywords;
+
+        let searchResult = [];
+        for (let i = 0; i < menu.length; i++) {
+            if(menu[i].name.includes(busqueda)){
+                searchResult.push(menu)
+            }
+            
+        } 
+
+            
+            res.render("products/search" , {
+                searchResult
+        });       
+        }
+        
     }
-}
