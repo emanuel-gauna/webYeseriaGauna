@@ -1,22 +1,22 @@
-#2663DE //celeste
+#2663DE //azul claro
 38
 99
 222
 87
 
-#0A3791
+#0A3791// azul oscuro
 10
 55
 145
 57
 
-#DE553C
+#DE553C // rojizo
 222
 85
 60
 87
 
-#9BDE10
+#7ECA9C // verde-agua
 155
 222
 16
