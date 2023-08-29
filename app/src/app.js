@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const methodOverride = require("method-override");
 
 const PORT = 3000;
 /* app.set("views", "./src/views");
@@ -19,7 +20,10 @@ const usersRouter = require("./routes/users.js");
 
 //rutas estaticas
 app.use(express.static("public"));
+app.use(express.urlencoded({extended:false}))//capturamos lo que viene de los formularios en obj/json
 app.use(express.json());
+/* metodo para aceptar put y delete */
+app.use(methodOverride("_method"));
 
 
 
@@ -36,7 +40,9 @@ app.use("/users", usersRouter);
 
 //404-not-Found//
 app.use((req,res,next)=>{
-    res.status(404).render("notFound")
+    res.status(404).render("notFound" ,{
+        title: "error-404"
+    })
 })
  
 

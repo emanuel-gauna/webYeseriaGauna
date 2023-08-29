@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head", {title: user.name})  %>
+    <title>Document</title>
+<body>
+    <!-- header -->
+    <%- include("../partials/header",) %>
+     <!-- fin del header -->
+    <main id="register">
+        <div class="registro-container">
+            <form action="/users/userHome/userEdit?_method=PUT" method="post" enctype="multipart/form-data">
+    
+                <div class="registro-form">
+    
+                    <h4>Información del perfil</h4>
+
+                    <div class="input-container user-Image-container">
+                        <img class="user-Image" src="/images/users/<%= userToedit.avatar %>" alt="">
+                    </div>
+
+                    <div class="input-container">
+                        <h6 class="datos-box">Nombre*</h6>
+                        <input class="input-style" type="text" name="name" placeholder="Ingresar nombre..." value="<%= locals.old ? old.name : userToedit.name %>">
+                        <% if (locals.errors && errors.name) { %>
+                            <small class="text-danger"><%= errors.name.msg %> </small>
+                        <% } %>
+                    </div>
+    
+                    <div class="input-container">
+                        <h6 class="datos-box">Apellido*</h6>
+                        <input class="input-style" type="text" name="lastname" placeholder="Ingresar apellido..."value="<%= locals.old ? old.lastname : userToedit.lastname %>">
+                        <% if (locals.errors && errors.lastname) { %>
+                            <small class="text-danger"><%= errors.lastname.msg %> </small>
+                        <% } %>
+                    </div>
+
+                    <div class="input-container">
+                        <h6 class="datos-box">Email*</h6>
+                        <input class="input-style" type="email" name="email" placeholder="Ingresar email..."  readonly value="<%= userToedit.email %>">
+                    </div>
+    
+                    <div class="input-container">
+                        
+                        <h6 class="datos-box">Provincia</h6>
+                        <select name="city" class="input-select">
+                            <option value="<%=  userToedit.city %>" hidden selected>Elija una provincia</option>
+                            <% provinces.forEach(province => { %>
+                                
+                                <% if (province.id === userToedit.city) { %>
+                                    <option value="<%= province.id %>" selected><%- province.nombre %></option>
+                                    <% } else { %>
+                                        <option value="<%= province.id %>"><%- province.nombre %></option>
+                                    <% } %>
+                                <% }) %>
+                            
+                        </select>
+                    </div>
+    
+    
+                    <div class="input-container">
+                        <h6 class="datos-box">Codigo postal</h6>
+                        <input class="input-style" type="text" name="postalCode" placeholder="Ingresar codigo postal"value="<%= locals.old ? old.postalCode : userToedit.postalCode %>">
+                    </div>
+    
+                    <div class="input-container">
+                        <h6 class="datos-box">Dirección</h6>
+                        <input class="input-style" type="text" name="address" placeholder="Ingresar dirección..." value="<%= locals.old ? old.address : userToedit.address %>">
+                    </div>
+    
+                    <div class="input-container">
+                        <h6 class="datos-box">Teléfono</h6>
+                        <input class="input-style" type="tel" name="tel" placeholder="Ingresar teléfono..." value="<%= locals.old ? old.tel : userToedit.tel %>">
+                    </div>
+                    <div class="input-container">
+                        <h6 class="datos-box">Cambiar foto de perfil</h6>
+                        <input type="file" name="avatar">
+                    </div>
+                    <p>Campos obligatorios *</p>
+                    <a class="button-container register" href="./">Volver al menu</a>
+
+                    <button class="button-container" type="submit"><a class="register"  >Editar</a></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- footer-->
+    <%- include("../partials/footer")  %> 
+    <!-- fin del footer -->
+    <%- include("../partials/scripts") %>
+</body>
+</html>

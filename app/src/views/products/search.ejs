@@ -1,42 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <%- include("../partials/head")%>
-  <body>
-    <!-- Navbar (sit on top) -->
+<html lang="en">
 
-    <!-- Header -->
-    <%- include("../partials/header")%> 
-
-    <!-- Page content -->
-    <div class="ps-content">
-
-      <!-- Menu Section -->
-      <div class="ps-row ps-padding-64" id="menu">
-        <div class="ps-col l6 ps-padding-large">
-          <h1 class="ps-center"><%= searchResult.name %></h1>
-          <br />
-          <h4> <% if(searchResult.name === ""){ %>
-             <%= searchResult.name = "Plato Tipico" %>  
-         <% }else { %>
-          <%= searchResult.name %>
-        <% } %></h4>
-          <p class="ps-text-grey">
-            U$S <%= searchResult.price %>
-          </p>
-        </div>
-
-        <div class="ps-col l6 ps-padding-large ps-img-menu">
-          <img
-            src="/images/<%= searchResult.image %>"
-            class="ps-round ps-image ps-opacity-min"
-            alt="Menu"
-          />
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <%- include("../partials/footer")%> 
-    </div>
-  </body>
+<%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <h1>todos los productos</h1>
+    <% for( let i = 0; i < searchResult.length; i++ ) { %>
+        <li>
+            <a href="/products/detail/<%= searchResult[i].id %><% searchResult[i] %>"><%= searchResult[i].name %></a>
+            
+        </li>
+    <% } %>
+    </h2>
+    <%- include('../partials/footer') %>
+</body>
 </html>
-

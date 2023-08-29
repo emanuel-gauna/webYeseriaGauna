@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head", {title: "Menu"})  %>
+    <title>Document</title>
+<body >
+    <!-- header -->
+    <%- include("../partials/header",) %>
+    <!-- fin del header -->
+    <main class="userHome">
+        <section>
+            <div class="form-container">
+                <h4 class="title">Hola, Bienvenid@ <%= user.name %>!!</h4>
+                
+                    <div class="btn-userHome">
+                        <a href="/users/userHome/userEdit">Ver perfil</a>
+                    </div>
+                    <div class="btn-userHome">
+                        <a href="">Ver Compras</a>
+                    </div>
+                    <div class="btn-userHomeDelete">
+                        <p class="deleteUserBtn" id="userMiventanaAbrir">Eliminar cuenta</p>
+                    </div>
+
+                    <div class="userVentanaEmerg" id="userMiventana">
+                        <div class="userventanaContenido">
+                            <h3 class="userVentanaTitle"><%= user.name %>, ¿Esta sequro que desea eliminar su cuenta?</h3>
+                            <div class="userVentanaCerrarDestroy">
+                                <button class="userVentanaCerrarEm btn-userHome" id="userVentanaCerrar">Cerrar</button>
+                                <form action="/users/userHome/delete/<%= user.id %>?_method=DELETE" method="post">
+                                    <button class="userVentanaCerrarEm btn-userHomeDelete" id="userVentanaDestroy">Confirmar Eliminacion!!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-userHomeDelete">
+                        <a href="/users/logOut">Cerrar sesion</a>
+                    </div>
+                
+            </div>
+            
+        </section>
+            
+    </main>
+    <script src="/JS/userHomeEmerg.js"></script>
+    <!-- footer-->
+    <%- include("../partials/footer")  %> 
+    <!-- fin del footer -->
+    <%- include("../partials/scripts") %>
+</body>
+</html>

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>otro</title>
-</head>
+
+<%- include('../partials/head') %>
 <body>
+    <%- include('../partials/header') %>
     <h1>todos los productos</h1>
-    <% for( let i = 0; i < menu.length; i++ ) { %>
+    <% for( let i = 0; i < materials.length; i++ ) { %>
         <li>
-            <a href="/products/detail/<%= menu[i].id %><% menu[i] %>"><%= menu[i].name %></a>
+            <a href="/products/detail/<%= materials[i].id %><% materials[i] %>"><%= materials[i].name %></a>
         </li>
     <% } %>
     </h2>
+    <%- include('../partials/footer') %>
 </body>
 </html>

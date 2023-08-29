@@ -1,0 +1,487 @@
+
+header{
+    background-image: url(/images/yeseriaGauna-logo.png);
+    background-position: 100%;
+    background-size: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: logo-name 10s infinite ;
+    
+}
+
+/* Menu de Hambuerguesa */
+header nav.navbar {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    background-color: #ffffff99 !important;
+}
+
+header div.container-fluid {
+    margin: 0;
+    padding: 0;
+    border: 2px solid var(--verde-neon);
+    border-radius: 10px;
+}
+
+header a.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+header button.navbar-toggler {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: var(--violeta-oscuro); 
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid; 
+    box-shadow: 5px 5px 15px black; 
+    max-width: 45px ;
+    max-height: 45px;
+    text-decoration: none;
+    transition: all 1s ease ;
+}
+
+header div.navbar-collapse {
+    padding: 10px;
+}
+
+header form.d-flex {
+    margin: 10px;
+}
+
+
+header ul li a.nav-link {
+    font-family: var(--titulo);
+    color: var(--azul-oscuro);
+    transition: all 2s ease;
+    font-weight: 900;
+}
+
+header ul li:hover a.nav-link {
+    color: black;
+    text-decoration: underline;
+    transform: scale(2);
+    font-size: 2.5rem;
+}
+
+header button.btn {
+    background-color: var(--azul-oscuro); 
+    color: white;
+    border-radius: 5px;
+    border: 2px solid; 
+    box-shadow: 5px 5px 15px black; 
+    transition: all 1s ease ;
+}
+
+header button.btn:hover {
+    background-color: var(--crema);
+    color: black;
+    transform:  scale(1.5);
+}
+
+header input.form-control {
+    border: 1px solid var(--violeta-oscuro);
+    border-radius: 10px;
+}
+
+/* Final de Menu de Hambuerguesa */
+
+div.logo img.logo{
+    display: none;
+    width: 15%;
+    border-radius: 50%;
+    border: solid 2px;
+    margin: 2px;
+    margin-bottom: 10px;
+    
+}
+img.logo{
+    display: none;
+ }
+
+.input-search, nav ul.links-busquedas{
+    display: none;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    background-color: var(--violeta-oscuro); 
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid; 
+    box-shadow: 5px 5px 15px black; 
+    max-width: 45px ;
+    max-height: 45px;
+    text-decoration: none;
+    transition: all 1s ease ;
+    
+}
+.button:hover{
+    background-color: var(--crema);
+    color: black;
+    transform:  scale(1.5);
+
+}
+/* menu desplegado */
+.oscurecer {
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 99;
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.close {
+    z-index: 100;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translate(-300px, 0);
+    transition: transform .3s ease;
+}
+/* cuando se agrega esta calse aparece el nav */
+.open {
+    transform: translate(0, 0);
+}
+ul.container-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin: 0%;
+   /*  background-image :url(/images/logo\ ecomerce.jpg);
+    background-position: 100%;
+    background-size: 100%; */
+} 
+
+ul.container-nav li{
+    border: solid white 1px;
+    border-radius: 5px;
+    color: black;
+    background-color: var(--verde-neon);
+    margin: 1px;
+    transition: all 1s ease;
+    
+}
+/*  */
+ul.container-nav li:hover{
+    background-color: var(--violeta-oscuro);
+    transform: scale(1.4);
+    border-color: var(--verde-claro);
+}
+ul.container-nav li a:hover{
+    color: white;
+
+}
+
+/*  */
+ul.container-nav li a{
+    color:var(--violeta-oscuro);
+    font-family: var(--fuente-parrafos);
+    font-size: 1.2rem;
+    margin: 0%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*  */
+
+button.glass {
+    display: none;
+}
+/* cambios para la session del user */
+div.user-cart{
+    display: flex;
+    position: relative;
+}   
+.users-menu {
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    width: 8rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-left: -3rem;
+    top: 3.4rem;
+}
+.users-menu a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fuente-parrafos);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+.users-menu a.users-menu-links:hover{
+    letter-spacing: 0.1rem;
+    text-decoration: underline;
+}
+.user-cart:hover .users-menu{
+    display: block;
+}
+div.user-cart .user-session{
+    display: inline-block;
+    z-index: 1000;
+    width: 8px;
+    height: 8px;
+    background: #00d900;
+    border-radius: 50px;
+    position: absolute;
+    top: .4rem;
+    left: 2.2rem;
+    transition: all .8s ease-out ;
+}
+.button:hover .user-session{
+    top: .1rem;
+    left: 2rem;
+}
+/*Fin de los cambios para la session del user */
+a.glass{
+    display: none;
+}
+
+div.hamburguer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 75%;
+}
+
+nav.nav-container{
+    display: none;
+ }
+ div.top-bar{
+    display: flex;
+ }
+/* fin de header */
+
+/* tablet */
+@media(min-width:480px){
+
+
+    header{
+       background-color: var(--verde-neon);
+       background-image: none;
+       display: flex;
+       justify-content: flex-start;
+      flex-flow: row wrap;
+      align-items:center;
+      animation: none;
+      width: 100%;
+
+   }
+
+   header nav.navbar {
+    display: none;
+   }
+
+   div.hamburguer-container{
+       display: none;
+   }
+   div.logo{
+       width: 8%;
+       height: 90%;
+       margin-bottom: 10px;
+       padding: 0 10px 10px 0;
+       display: flex;
+      flex-flow: column wrap ;
+       justify-content:flex-start;
+       align-items:flex-start;
+       align-content:flex-start;
+       margin-bottom: 10px;
+       align-self: flex-start;
+       margin-left: 0;
+       }
+
+header button.glass {
+    display: flex;
+}
+       
+   header div.logo img.logo{
+       display: flex;
+       width: 100%;
+       height: 200%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       animation: logo-name  5s infinite;
+    }
+    @keyframes logo-name {
+        0%{
+            transform: rotateY(45deg);
+        }
+        25%{
+            transform: rotateY(90deg);
+        }
+        50%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: rotateY(360deg);
+        }
+    }
+   a.user-button {
+       display: flex;
+   } 
+   a.glass{
+    display: flex;
+}
+
+   div.top-bar{
+       display: flex;
+       width: 90%;
+       flex-flow: row wrap;
+       justify-content: space-between;
+
+   }
+   ul.container-nav{
+    display: none;
+    
+} 
+div.oscurecer{
+    width: 0%;
+}
+nav.close{
+    display: none;
+}
+
+   form.form-header {
+    display: flex;
+   }
+   
+   div.input-search{
+       width: 50%;
+       margin: 0;    
+       text-align: center;
+       font-size: 24px;
+       background-color: var(--violeta-oscuro);
+       color: black;
+       text-align: center;
+       border-radius: 5px;
+        border: 2px solid ;
+        border-radius: 25px;    
+   }
+
+   input.search{
+       width: 100%;
+       font-size: 24px;
+       background-color: var(--violeta-oscuro);
+       border-radius: 25px;
+       border: solid white 2px;
+       color: white;
+       font-family: var(--parrafos);
+       padding-left: 10px;
+   }
+
+   div.input-glass{
+       width: 62%;
+   }
+   div.user-cart{
+       display: flex;
+       flex-flow: row wrap;
+   }
+   .user{
+       display: flex;
+   }
+   header nav{
+       width: 100%;
+   }
+   nav ul.links-busquedas{
+       width: 100%;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content:space-around ;
+       align-items: center;
+       width: 100%;
+       color: white;
+   
+       border-radius: 5px  ;
+       font-family: "teko";
+   }
+   
+   nav ul.links-busquedas li{
+       display: flex;
+       border-radius: 5px;
+       background-color: var(--violeta-oscuro);
+       padding: 5px;
+       text-align: center;
+       margin: 2px;
+       color: white;
+       text-decoration: none;
+       box-shadow: 5px 5px 15px black;
+    transition: all 1s ease; 
+   }
+   nav ul.links-busquedas li:hover {
+       color: black;
+       background-color: white;
+       transform: scale(1.5);
+   }
+   nav ul.links-busquedas li a{
+    text-decoration: none;
+    color: white; 
+    text-transform: uppercase;
+    transition: all 1s ease;
+   }
+   nav ul.links-busquedas li a:hover{
+    color: black;
+    background-color: var(--crema);
+    font-weight: 600;
+   }
+
+   .input-search,  ul.links-busquedas{
+       display: flex;
+   }
+  
+   div.nav-container{
+       width: 10;
+       height: 10vh;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: flex-end;
+       text-decoration: none;
+       height: 100%;
+    }
+    .users-menu {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .users-menu a{
+        color: var(--verde-neon);
+        font-weight: bolder;
+    }
+
+    /* fin del header */
+    
+   
+}
+/* desktop */
+@media(min-width:768px){
+
+}
+

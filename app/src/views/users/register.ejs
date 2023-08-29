@@ -1,34 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- head -->
-    <%- include('../partials/head') %>
-    <title>registro</title>
+
+<%- include("../partials/head", {title: "registro"}) %>
+
+<title>registro</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<style>
+    span{
+        color: red;
+    }
+</style>
+<body>
+    <!-- header -->
+    <%- include("../partials/header") %> 
+    <!-- fin del header -->
+    <main id="register">
+        <div class="registro-container">
+
+            <form id="form" action="/users/register" method="post" enctype="multipart/form-data">
     
-    <body>
-        <!-- header -->
-    <%- include('../partials/header') %>
+                <div class="registro-form">
+    
+                    <h4>Regístrate</h4>
+                
+                    <div class="input-container">
+                        <h6 class="datos-box">Nombre*</h6>
+                        <input id="name" class="input-style form-control " type="text" name="name" placeholder="Ingresar nombre..." value="<%= locals.old && old.name %>">
+                        <span id="nameErrors"></span>
+                        <% if (locals.errors && errors.name) { %>
+                            <small class="text-danger"><%= errors.name.msg %> </small>
+                        <% } %>
+                    </div>
+                    
+                    <div class="input-container">
+                        <h6 class="datos-box">Apellido*</h6>
+                        <input id="lastname" class="input-style form-control " type="text" name="lastname" placeholder="Ingresar apellido..."value="<%= locals.old && old.lastname %>">
+                        <span id="lastnameErrors"></span>
+                        <% if (locals.errors && errors.lastname) { %>
+                            <small id="lastnameError" class="text-danger"><%= errors.lastname.msg %> </small>
+                        <% } %>
+                    </div>
 
-    <h3>Registrate</h3>
-    <form action="post" action="/users/register" method="post" enctype="multipart/form-data">
-        <label for="">Nombre</label>
-        <input type="text" name="nombre" id="">
-        <p>Hobies</p>
-        <% for (let index = 1; index < 10; index++) { %>
-            <label for=""> hobiee <%= index %> </label>
-            <% if ( index % 2 == 0){ %>
-                <input class="par" type="text" name="hobies[]" placeholder="ingresa tu hobiee">
-                <% } else{ %>
-                    <input class="impar" type="text" name="hobies[]" placeholder="ingresa tu hobiee">
-             <% } %>
-             <br>
-        <% } %>
-    </form>
-    <% for (let i = 0;  i < listUsers.length; i++) { %>
-        <li>
-            <%= listUsers[i] %>
-        </li>    
-    <% } %>
+                    <div class="input-container">
+                        <h6 class="datos-box">Email*</h6>
+                        <input id="email" class="input-style  form-control " type="email" name="email" placeholder="Ingresar email..."value="<%= locals.old && old.email %>">
+                        <span id="emailErrors"></span>
+                        <% if(locals.errors && errors.email) { %>
+                            <small class="text-danger"><%= errors.email.msg %> </small>
+                            <% } %>
+                    </div>
+    
+                    <div class="input-container">
+                        <h6 class="datos-box">Contraseña*</h6>
+                        <input id="pass" class="input-style  form-control" type="password" name="pass" placeholder="Ingresar contraseña...">
+                        <span id="passErrors"></span>
+                        <% if (locals.errors && errors.pass) { %>
+                            <small class="text-danger"><%= errors.pass.msg %> </small>
+                        <% } %>
+                    </div>
+    
+                    <div class="input-container">
+                        <h6 class="datos-box">Confirma tu contraseña*</h6>
+                        <input id="pass2" class="input-style  form-control" type="password" name="pass2" placeholder="Confirmar contraseña...">
+                        <span id="pass2Errors"></span>
+                        <% if (locals.errors && errors.pass2) { %>
+                            <small class="text-danger"><%= errors.pass2.msg %> </small>
+                        <% } %>
+                    </div>
+                    
+                    <div class="input-container">
+                        <h6 class="datos-box">Foto de perfil</h6>
+                        <input id="image" type="file" name="avatar">
+                        <span id="fileErrors"></span> 
+                    </div>
 
+                    <p>Campos obligatorios *</p>
+                    <span id="submitErrors"></span>
+                    <button id="" class="button-container" type="submit"><a class="register" >Registrarme</a></button>
+                </div>
+            </form>
+        </div>
+    </main>
+<!-- footer -->
+    <%- include("../partials/footer") %> 
+    <!-- fin del footer -->
+
+    
 </body>
 
 </html>

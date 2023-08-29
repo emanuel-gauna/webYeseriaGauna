@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+
+@import url("/css/header.css");
+@import url("/css/home.css");
+@import url("/css/footer.css");
+@import url("/css/admin.css");
+
+
+
+/*    
+font-family: 'Preahvihear', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 
+/* 
+     
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+/* p{
+    font-family: "roboto";
+} */
+
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family:  sans-serif - teko; */
+}
+
+li{
+    list-style: none;
+}
+
+
+/* #1C1427 , #40394A , #7ECA9C , #CCFFBD , #F3EFE0  */
+:root {
+    /* Tipografia */
+    --font-title: 'Ubuntu', sans-serif;
+
+    /* subtitulos y botones */
+    --font-subtitle: 'Preahvihear', sans-serif;
+    
+    /* descripciones//  */
+    --font-parra: 'Titillium Web', sans-serif;
+
+    /* Colores */
+    --azul-claro: #2663DE ;
+    /* fondos */
+    --azul-oscuro: #0A3791;
+    --verde-agua: #7ECA9C;
+    --pasto:#689111;
+    --rojizo: #DE553C;
+
+    
+    /* Tamaño tipografico */
+    --titulos: 6vw;
+    --parrafos: 4vw;
+    --precio: 5.2vw;
+    --descuento: 5vw;
+    --descripcion: 5vw;
+}
+

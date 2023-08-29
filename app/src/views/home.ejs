@@ -2,12 +2,155 @@
 <html lang="en">
 
 <%- include('./partials/head') %>
-<title>homepage</title>
 <body>
     <%- include('./partials/header') %>
 
-    <h1>Bienvenido a la home Yeseria Gauna</h1>
+    <h1 class="homeh1">Bienvenido a la home Yeseria Gauna</h1>
+    <main id="home">
+        <!-- banner -->
+ 
+        <section class="title-section">
+            <div class="title-container">
+                <h2>
+                    Ofertas
+                </h2>
+                <a href="">Ver todas</a>
+                <hr>
+            </div>
+        </section>
+        <h3 class="homeP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, soluta dolorum voluptates ab id repudiandae dolorem porro? Error, reiciendis voluptatem! Debitis ipsa dignissimos obcaecati pariatur qui porro voluptas dolorum quibusdam!</h3>
+        <!-- productos  ofertas-->
+        <!-- partials de banners -->
+       <!-- fin de productos ofertas -->
+       
+        <!-- productos destacados -->
+        <section class="title-section">
+            <div class="title-container">
 
+                <h2>
+                    Productos destacados
+                </h2>
+
+                <hr>
+            </div>
+        </section>
+        <!-- productos -->
+       
+        <!-- modos de pago y mas -->
+        <section class="payMode-section">
+            <article class="modes">
+                <div class="modes-container">
+
+                    <div class="text-modes">
+                        <i  id="abrir1" class="fa-solid fa-credit-card iconpay"></i>
+                        <p class="text">Tarjeta de crédito</p>
+                        <p class="verMas" id="abrir2">Ver mas</p>
+                        <div id="miVentana" class="ventana">
+                            <div class="contenido-ventana">
+                                <h2>Tarjeta de crédito</h2>
+                                <p>Ahora 12, 6 y 3 cuotas
+                                    En productos seleccionados con Visa, American Express, Cabal, Tarjeta Shopping, Cordobesa y Mastercard bancarias.</p>
+                                <button class="cerrar"id="cerrar">Cerrar ventana</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-modes">
+                        <i id="abrir1" class="fa-solid fa-truck-fast iconpay"></i>
+                        <p class="text">Forma de envio</p>
+                        <p class="verMas" id="abrir2">Ver mas</p>
+                        <div id="miVentana" class="ventana">
+                            <div class="contenido-ventana">
+                                <h2>Forma de envio</h2>
+                                <p>Los vendedores pueden utilizar servicios de correo o mensajería para enviar los productos a los compradores. En este caso, el comprador y el vendedor deben acordar previamente el método de envío y el costo del mismo.
+                                    Retiro en tienda: ofrecemos la posibilidad de que el comprador retire el producto en el local, evitando así el costo y la incertidumbre del envío
+                                </p>
+                                <button class="cerrar"id="cerrar">Cerrar ventana</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-modes">
+                        <i id="abrir1" class="fa-regular fa-credit-card iconpay"></i>
+                        <p class="text">Tarjeta de débito</p>
+                        <p class="verMas" id="abrir2">Ver mas</p>
+                        <div id="miVentana" class="ventana">
+                            <div class="contenido-ventana">
+                                <h2>Tarjeta de débito</h2>
+                                <p>Podés pagar tus compras con cualquiera de estos medios. Es rápido y seguro, siempre.
+                                    Cuotas sin tarjeta de crédito
+Elegí a Mercado Crédito al comprar. Luego pagás las cuotas mes a mes en efectivo, con débito o con el dinero en tu cuenta de Mercado Pago.
+                                    Tarjetas de crédito en hasta 24 cuotas*
+                                    Acreditación instantánea.
+                                    Efectivo
+                                    Es muy simple: cuando termines tu compra, te daremos las instrucciones para que sepas cómo y dónde pagarla. Tanto Pago-facil como Rapi-pago.
+                                </p>
+                                <button class="cerrar" id="cerrar">Cerrar ventana</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-modes">
+                        <i id="abrir1" class="fa-solid fa-money-bill-1-wave iconpay"></i>
+                        <p class="text">Efectivo</p>
+                        <p class="verMas" id="abrir2">Ver mas</p>
+                        <div id="miVentana" class="ventana">
+                            <div class="contenido-ventana">
+                                <h2>Efectivo</h2>
+                                <p>cuando termines tu compra, te daremos las instrucciones para que sepas cómo y dónde pagarla. Tanto Pago-facil como Rapi-pago.
+
+                                </p>
+                                <button class="cerrar" id="cerrar">Cerrar ventana</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-info">
+                    <i id="abrir1" class="fa-solid fa-plus"></i>
+                    <div id="miVentana" class="ventana">
+                        <div class="contenido-ventana">
+                            <h2>Medios de pago</h2>
+                            <p>Podés pagar tus compras con cualquiera de estos medios. Es rápido y seguro, siempre.
+                                
+                            </p>
+                            <button class="cerrar" id="cerrar">Cerrar ventana</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+ 
+        <!-- <section class="title-register">
+            <div class="register-container">
+                <hr class="line-left">
+                <h2 class="register-prom">
+                    Recibí nuestras promos
+                </h2>
+                <hr class="line-rigth">
+            </div>
+        </section> -->
+        <section>
+            <!-- form de registro -->
+           <!--  <form action="" method="">
+                <div class="form">
+                    <div class="input-container">
+                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email*">
+                        <span class="error-message">Debe ingresar su email</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-style" type="text" name="name" placeholder="Nombre*">
+                        <span class="error-message">Debe ingresar su nombre</span>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="btn btn-submit">Suscribite</button>
+                        <span class="error-message text-center">Los datos no son correctos</span>
+                    </div> -->
+                    <!-- <div class="img-form">
+                        <img src="" alt="">
+                    </div> -->
+                </div>
+            </form>
+        </section>
+    </main>
     <%- include('./partials/footer') %>
 </body>
 </html>
