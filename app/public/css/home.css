@@ -1,7 +1,9 @@
 body {
-    background-color: var(--azul-claro) !important;
     width: 100%;
     font-family: var(--font-parra);
+    background-image: url(/images/yesoheader.jpg);
+    background-position: 100%;
+    background-size: 100%;
 
 }
 .homeh1{

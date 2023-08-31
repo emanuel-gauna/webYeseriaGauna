@@ -4,49 +4,48 @@
       <a href="/"><img class="logo" src="/images/yeseriaGauna-logo.png" alt="logo"></a>
     </div>
     <!-- menu de hamburguesa-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
+    <nav class="navbar" >
+      <div class="headerLeft">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/products">Contrataciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">muestrario de nuestras obras</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">acera de nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/products">tienda - materiales y herramientas</a>
-            </li>
-            
-          </ul>
           <form class="d-flex" role="search" action="/products/search" method="GET">
-            <input class="form-control me-2" type="text" placeholder="Buscar" aria-label="Search" name="search">
+            <input class="form-control me-2" type="text" placeholder="Buscar... en yeseria" aria-label="Search" name="keywords">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
         </div>
-      </div>
     </nav>
    
     <!-- top bar -->
     <div class="top-bar">
       <div class="input-glass">
          <!-- input buscador -->
- 
+        <form action="/products/search" method="GET" class="form-header">
+          <div class="input-search">
+          <input class="search" type="text" placeholder="busca... yeseria" name="keywords">
+        </div>
+        <button class="glass button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
       </div>
       <div class="user-cart">
-  
-        <a href="/productDetail/productCart" class="cart button">
+        <a href="/products/cart" class="button">
           <!-- carrito de compras -->
           <i class="fa-solid fa-cart-shopping"></i>
         </a>
       </div>
+      <div class="user-cart user-user">
+        <a href="/user/login" class="button">
+          <!-- usuario -->
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </div>
     </div>
-  
+    <nav>
+      <ul class="links-busquedas">
+        <li><a href="#contacto">Contrataciones</a></li>
+        <li><a href="/works">Muestrario de trabajos</a></li>
+        <li><a href="/products">Tienda</a></li>
+        <li><a href="#sobreNosotros">Contrataciones</a></li>
+      </ul>
+    </nav>
   </header>
