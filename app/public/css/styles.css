@@ -28,6 +28,10 @@ font-family:
 li{
     list-style: none;
 }
+h1, h2{
+    font-size: var(--titulos);
+    font-family: var(--font-title);
+}
 /* p{
     font-family: "roboto";
 } */
@@ -66,10 +70,10 @@ li{
 
     
     /* Tamaño tipografico */
-    --titulos: 6vw;
-    --parrafos: 4vw;
-    --precio: 5.2vw;
-    --descuento: 5vw;
-    --descripcion: 5vw;
+    --titulo: 2vw;
+    --subtitulo: 1.75vw;
+    --precio: 2vw;
+    --descuento: 1.5vw;
+    --descripcion: 1.1vw;
 }
 

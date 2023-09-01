@@ -6,6 +6,7 @@ body {
     background-size: 100%;
 
 }
+
 .homeh1{
     font-family: var(--font-parra);
 }
@@ -68,7 +69,7 @@ main#home section.title-section div.title-container a {
     font-size: 0.65rem;
     letter-spacing: 0.4px;
     font-family: var(--parra);
-    color: var(--verde-oscuro);
+
 }
 
 main#home section.title-section div.title-container  h2 {
@@ -634,4 +635,8 @@ main#home section form div.form  div.button-container button.btn:hover {
         margin-bottom: 0rem;
         
     }
+}
+a{
+    list-style: none;
+    color: var(--rojizo);
 }

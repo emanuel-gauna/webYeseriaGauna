@@ -121,8 +121,8 @@ img.logo{
     
 }
 .button:hover{
-    background-color: var(--pasto);
-    color: white;
+    background-color: var(--rojizo);
+    color: var(--verde-agua);
     transform:  scale(1.5);
 
 }
@@ -147,26 +147,6 @@ ul.container-nav li{
     margin: 1px;
     transition: all 1s ease;
     
-}
-/*  */
-ul.container-nav li:hover{
-    background-color: var(--violeta-oscuro);
-    transform: scale(1.4);
-    border-color: var(--verde-claro);
-}
-ul.container-nav li a:hover{
-    color: white;
-
-}
-
-/*  */
-ul.container-nav li a{
-    color:var(--violeta-oscuro);
-    font-family: var(--fuente-parrafos);
-    font-size: 1.2rem;
-    margin: 0%;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 /*  */
@@ -281,7 +261,6 @@ nav.nav-container{
        align-self: flex-start;
        margin-left: 0;
        border-radius: 50% ;
-       border: solid black;
        }
 
 header button.glass {

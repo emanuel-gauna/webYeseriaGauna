@@ -1,6 +1,8 @@
 
 .footerh1{
     font-family: var(--font-subtitle);
+    font-size: var(--subtitulo);
+    color: var(--azul-oscuro);
 }
 
 footer{
@@ -11,7 +13,6 @@ footer{
     position: relative; 
     z-index: 100;
     overflow: visible;
-    max-width: 1290px;
     padding: 10px;
     border: 2px solid; 
     display: flex;
@@ -20,6 +21,7 @@ footer{
     align-items: center;
     left: 0;
     bottom: 0;
+    background-color: var(--pasto);
 }
 div.logo-footer{
     display: none;
@@ -97,11 +99,12 @@ nav ul.nav-container li a:hover{
 article.container-2{
     display: none;
 }
-footer div.footer-align{
+div.footer-align{
     display: none;
 }
 /* inicio media queries */
 /*  tablet */
+
 @media(min-width:480px){
 
      /* inicio del footer */
@@ -109,6 +112,7 @@ footer div.footer-align{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
+        max-width:max-content;
     }
 
     
@@ -129,9 +133,10 @@ footer div.footer-align{
     }
     
     p.app-social{
-        font-size: 20px ;
         display: flex;
         width: 100%;
+        font-size: var(--descripcion);
+        font-family: var(--font-parra);
     }
     
     nav.icons-social{
@@ -148,8 +153,14 @@ footer div.footer-align{
         }
         ul.link-social li {
             font-size: 35px;
-            
-            
+                
+        }
+        ul.link-social li:hover{
+                color: black;
+                transform: scale(1.7);
+                transition: ease all 1s;
+            }
+
         }
         div.container-1{
             display: flex;
@@ -158,8 +169,7 @@ footer div.footer-align{
             justify-content: flex-start;
             align-items: flex-start;
             padding: 10px;
-            border-radius: 5px;
-            background-color: var(--crema); 
+            border-radius: 5px; 
             margin-right: 4px;   
         }
         article.container-2{
@@ -180,7 +190,7 @@ footer div.footer-align{
             display: flex;
             width: 100%;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: flex-end;
             position: relative;
             background-color: var(--crema);
             margin: 5px 0px 0px 0px; 
@@ -196,4 +206,3 @@ footer div.footer-align{
        
     /* fin del footer */
     
-}
