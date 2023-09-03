@@ -9,6 +9,7 @@
 @import url("/css/home.css");
 @import url("/css/footer.css");
 @import url("/css/admin.css");
+@import url("/css/carousel.css");
 
 
 
@@ -28,9 +29,10 @@ font-family:
 li{
     list-style: none;
 }
-h1, h2{
+h1, h2, h5{
     font-size: var(--titulos);
     font-family: var(--font-title);
+    color: var(--azul-oscuro);
 }
 /* p{
     font-family: "roboto";
@@ -70,10 +72,9 @@ li{
 
     
     /* Tamaño tipografico */
-    --titulo: 2vw;
-    --subtitulo: 1.75vw;
-    --precio: 2vw;
-    --descuento: 1.5vw;
-    --descripcion: 1.1vw;
+    --titulo: 2.5rem;
+    --subtitulo: 1.5rem;
+    --precio: 2rem;
+    --descuento: 1.5rem;
+    --descripcion: 1.2rem;
 }
-

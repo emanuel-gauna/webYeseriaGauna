@@ -3,22 +3,24 @@
     <div class="logo">
       <a href="tel:1164371277"><img class="logo" src="/images/whatsaap.png" alt="logo"></a>
     </div>
+    <!-- fin del logo -->
+
     <!-- menu de hamburguesa-->
     <nav class="navbar" >
       <div class="headerLeft">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
-        </button>
+        </button> <!-- busqueda y boton de lupa -->
           <form class="d-flex" role="search" action="/products/search" method="GET">
             <input class="form-control me-2" type="text" placeholder="Buscar... en yeseria" aria-label="Search" name="keywords">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <button class="btn btn-outline-success" type="submit">buscar</button>
           </form>
         </div>
     </nav>
    
-    <!-- top bar -->
+    <!-- top bar  user y cart-->
     <div class="top-bar">
-      <div class="input-glass">
+      
          <!-- input buscador -->
         <form action="/products/search" method="GET" class="form-header">
           <div class="input-search">
@@ -26,19 +28,18 @@
         </div>
         <button class="glass button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
-      </div>
-      <div class="user-cart">
+      
+      <!-- boton de usuario -->
         <a href="/products/cart" class="button">
           <!-- carrito de compras -->
           <i class="fa-solid fa-cart-shopping"></i>
         </a>
-      </div>
-      <div class="user-cart user-user">
+    
+    
         <a href="/user/login" class="button">
           <!-- usuario -->
           <i class="fa-solid fa-user"></i>
         </a>
-      </div>
     </div>
     <nav>
       <ul class="links-busquedas">

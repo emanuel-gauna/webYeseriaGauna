@@ -1,0 +1,37 @@
+
+
+img.d-block{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    color: var(--azul-oscuro);
+   
+}
+.carousel-inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: url(/images/yesoheader.jpg);
+}
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item h5{
+    color: black;
+    
+    font-weight: 900;
+    font-family: var(--font-subtitle);
+}
+.carousel-item p{
+    color: black;
+    font-family: var(--font-parra);
+    font-weight: 900;
+}
+div.carousel-indicators button.active{
+    background-color: var(--azul-oscuro);
+}

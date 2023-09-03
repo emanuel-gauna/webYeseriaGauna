@@ -9,17 +9,18 @@ body {
 
 .homeh1{
     font-family: var(--font-parra);
+    color: var(--verde-agua);
 }
 .homeP{
     font-family: var(--font-subtitle);
-   
-    ;
+    color: black;
+    background-color: var(--verde-agua);
 }
 main#home section.banner {
     overflow:hidden;
     margin: 0 auto;
     max-width: 1516px;
-    box-shadow: 0.5px 0 4px 0.2px var(--rojizo);
+    box-shadow: 0.5px 0 4px 0.2px var(--verde-agua);
     font-family: var(--font-parra);
     
 }
@@ -58,7 +59,7 @@ main#home section.title-section div.title-container {
     align-items: center;
     margin-bottom: 25px;
     font-family: var(--font-title);
-    background-color: var(--rojizo);
+    background-color: var(--verde-agua);
     
     
 }
@@ -88,17 +89,7 @@ main#home section.title-section div.title-container hr {
     
 
 }
-/* productos */
 
-/* section.porducts-offerts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    gap: 8%;
-    
-} */
 main#home .dot{
     margin: 1rem 0.8rem 1rem 0 !important;
     background-color: var(--verde-neon) !important;
@@ -563,11 +554,6 @@ main#home section form div.form  div.button-container button.btn:hover {
         
     }
 
-    main#home section form div.form  div.button-container button.btn {
-        height: 2.5rem;
-        width: 12rem;
-        font-size: 1.5rem;
-    }
 
     main#home section.title-register {
         margin-top: 2rem;
@@ -588,11 +574,7 @@ main#home section form div.form  div.button-container button.btn:hover {
         
         font-size: 2.5rem;
     }
-    main#home .contenido-ventana {
-        
-        margin: 30% auto; /* Centrar vertical y horizontalmente */
-        
-    }
+
     
 }
 
@@ -603,40 +585,14 @@ main#home section form div.form  div.button-container button.btn:hover {
         font-size: 2.5rem;
     }
 
-    main#home section form div.form {
-        margin-top: 2rem;
-    }
-    main#home .contenido-ventana {
-        
-        margin: 20% auto; /* Centrar vertical y horizontalmente */
-        
-    }
 }
 @media (min-width: 970px){
-    main#home section.banner-bottom div.img-ofert {
-        margin: 0 5rem 0 5rem;
-        padding: 2rem;
-    }
-    main#home section.payMode-section article.modes {
-        
-        margin-top: 3rem;
-        margin-bottom: 1rem;
-        
-    }
+   
 }
 @media (min-width: 1630px){
-    main#home section.banner-bottom div.img-ofert {
-        margin: 0 7rem 0 7rem;
-        padding: 5rem;
-    }
-    main#home section.payMode-section article.modes {
-        
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        
-    }
+ 
 }
 a{
     list-style: none;
-    color: var(--rojizo);
+    color: var(--verde-agua);
 }

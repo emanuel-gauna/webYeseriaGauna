@@ -1,5 +1,6 @@
 
 header{
+    display: flex;
     background-image: url(/images/yeseriaGauna-logo.png);
     background-position: 100%;
     background-size: 100%;
@@ -93,9 +94,18 @@ header input.form-control {
 /* Final de Menu de Hambuerguesa */
 
 
-img.logo{
-    display: none;
- }
+ header div.logo img.logo {
+    display: flex;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 75vh;
+    right: 5vh;
+
+}
 
 .input-search, nav ul.links-busquedas{
     display: none;
@@ -219,6 +229,8 @@ nav.nav-container{
  }
  div.top-bar{
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
  }
 /* fin de header */
 
@@ -274,6 +286,7 @@ header button.glass {
        border-radius: 50%;
        flex-direction: row;
        flex-wrap: wrap;
+       position: inherit;
 
     }
   
@@ -404,6 +417,12 @@ nav.close{
         font-weight: bolder;
     }
 
+    div.buttons-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
     /* fin del header */
     
    
